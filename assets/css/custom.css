@@ -1,0 +1,13 @@
+.org-todo.todo.TODO{
+    background-color: darkred;
+    padding: 5px ;
+    border: dotted;
+    border-color: white;
+}
+
+.org-todo.done.DONE{
+    background-color: lawngreen;
+    padding: 5px ;
+    border: dotted;
+    border-color: white;
+}
