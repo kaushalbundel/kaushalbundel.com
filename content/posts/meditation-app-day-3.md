@@ -1,7 +1,7 @@
 +++
 title = "Notes on Building a meditation app (Day 3)"
 author = ["Kaushal Bundel"]
-date = 2024-02-05T17:08:00+05:30
+date = 2024-02-11
 lastmod = 2024-02-11T00:19:48+05:30
 tags = ["business", "meditationapp", "Business", "DevNotes"]
 categories = ["MeditationApp"]
