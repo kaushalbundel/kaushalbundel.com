@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>meditationapp on Experiments, Thoughts and reflection</title>
+    <link>https://kaushalbundel.com/tags/meditationapp/</link>
+    <description>Recent content in meditationapp on Experiments, Thoughts and reflection</description>
+    <image>
+      <title>Experiments, Thoughts and reflection</title>
+      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://kaushalbundel.com/tags/meditationapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes on Building a meditation app (Day 2)</title>
+      <link>https://kaushalbundel.com/posts/meditation-app-day-2/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/meditation-app-day-2/</guid>
+      <description>Development Activity Task Adding Ambient music to the meditation session Option 1: Create a local app state, store the value of the widget state in that app state. Use the app state in the meditation section Option 2: Create a page parameter, Pass the widget state in the page parameter and use the page parameter in the meditation session So far, having tried both of these methods, I am not able to get the looping music to work.</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 1)</title>
+      <link>https://kaushalbundel.com/posts/meditation-app-day-1/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/meditation-app-day-1/</guid>
+      <description>Defining the Constraints Feature Constraint: The time spent on an activity should be minimal, yet the feature/activity should offer relief from day-to-day stressors during that period. Feature Constraint: The activity should seamlessly integrate into daily routines. Developmental Constraint: I should be able to reuse already developed features such as the login flow, registration flow, meditation timer, and journal. Cost Constraint: The development cost should be limited to less than 50,000 INR.</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 3)</title>
+      <link>https://kaushalbundel.com/posts/meditation-app-day-3/</link>
+      <pubDate>Mon, 05 Feb 2024 17:08:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/meditation-app-day-3/</guid>
+      <description>Development Activity Task Adding a mood board to check on the user mood as soon as the user opens up the app ATTACH [] The user should be able view the mood board as soon as they open the app.
+[] The user should be able to click the appropriate mood indicator and mark the mood for the day. After click appropriate indicator the indicator value should get stored in the database</description>
+    </item>
+    <item>
+      <title>Notes on building a meditation app (Day 0)</title>
+      <link>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</guid>
+      <description>Objective of the App Time for a short story
+About 1 month back, I got the idea of creating an application that helps in conducting an effective meditation practice. The problem that I was trying to solve was that sometimes after a meditation session my mind was on overdrive and I felt overwhelmed by my thoughts. To channel and understand my thoughts I started the practice of writing a journal. I would use pen and paper to do journaling and the practice helped me to calm down and structure my thoughts.</description>
+    </item>
+  </channel>
+</rss>

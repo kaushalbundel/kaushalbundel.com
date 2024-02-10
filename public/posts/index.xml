@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Experiments, Thoughts and reflection</title>
+    <link>https://kaushalbundel.com/posts/</link>
+    <description>Recent content in Posts on Experiments, Thoughts and reflection</description>
+    <image>
+      <title>Experiments, Thoughts and reflection</title>
+      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Feb 2024 00:15:00 +0530</lastBuildDate>
+    <atom:link href="https://kaushalbundel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing Books and making systems to fool oneself</title>
+      <link>https://kaushalbundel.com/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</link>
+      <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</guid>
+      <description>I am stickler for reading writing books written by the writers themselves. I have read three of them, On writing by Stephen King, Writing Badly is Easy By Amitava Kumar and Novalist as a Vocation by Haruki Murakami, along with the description of a writer&amp;rsquo;s day and other related stuff in the books and blogs by Tim Ferris.It&amp;rsquo;s fascinating to hear writers talk about the gruesome writing rituals they follow, the ways in which they developed their writing skills, and how they overcame numerous hardships to become masters of their craft.</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 2)</title>
+      <link>https://kaushalbundel.com/posts/meditation-app-day-2/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/meditation-app-day-2/</guid>
+      <description>Development Activity Task Adding Ambient music to the meditation session Option 1: Create a local app state, store the value of the widget state in that app state. Use the app state in the meditation section Option 2: Create a page parameter, Pass the widget state in the page parameter and use the page parameter in the meditation session So far, having tried both of these methods, I am not able to get the looping music to work.</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 1)</title>
+      <link>https://kaushalbundel.com/posts/meditation-app-day-1/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/meditation-app-day-1/</guid>
+      <description>Defining the Constraints Feature Constraint: The time spent on an activity should be minimal, yet the feature/activity should offer relief from day-to-day stressors during that period. Feature Constraint: The activity should seamlessly integrate into daily routines. Developmental Constraint: I should be able to reuse already developed features such as the login flow, registration flow, meditation timer, and journal. Cost Constraint: The development cost should be limited to less than 50,000 INR.</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 3)</title>
+      <link>https://kaushalbundel.com/posts/meditation-app-day-3/</link>
+      <pubDate>Mon, 05 Feb 2024 17:08:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/meditation-app-day-3/</guid>
+      <description>Development Activity Task Adding a mood board to check on the user mood as soon as the user opens up the app ATTACH [] The user should be able view the mood board as soon as they open the app.
+[] The user should be able to click the appropriate mood indicator and mark the mood for the day. After click appropriate indicator the indicator value should get stored in the database</description>
+    </item>
+    <item>
+      <title>Notes on building a meditation app (Day 0)</title>
+      <link>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</guid>
+      <description>Objective of the App Time for a short story
+About 1 month back, I got the idea of creating an application that helps in conducting an effective meditation practice. The problem that I was trying to solve was that sometimes after a meditation session my mind was on overdrive and I felt overwhelmed by my thoughts. To channel and understand my thoughts I started the practice of writing a journal. I would use pen and paper to do journaling and the practice helped me to calm down and structure my thoughts.</description>
+    </item>
+    <item>
+      <title>The Old Man and the Sea</title>
+      <link>https://kaushalbundel.com/posts/the-old-man-and-the-sea/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/the-old-man-and-the-sea/</guid>
+      <description>Book Summary Simplistically, This book talks about the journey of an old man in the sea and his efforts to catch a fish. On a deeper level, The book is an allegory of what it means to pursue something. The sea is the vast expense of the world, where one should not venture too far. The huge, deep part of the sea is unpredictable with all manner of dangers like Sharks and unstable sea.</description>
+    </item>
+    <item>
+      <title>Web Browsing in Emacs - EWW</title>
+      <link>https://kaushalbundel.com/posts/emacs-using-eww/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/emacs-using-eww/</guid>
+      <description>Reference Guide for EWW</description>
+    </item>
+    <item>
+      <title>Core Action for Products</title>
+      <link>https://kaushalbundel.com/posts/core-action/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/core-action/</guid>
+      <description>Understanding Core Action in the context of Product Management</description>
+    </item>
+    <item>
+      <title>A Gentle Introduction to Ideal Customer Profile</title>
+      <link>https://kaushalbundel.com/posts/icp/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/icp/</guid>
+      <description>A Gentle Introduction to Ideal Customer Profile</description>
+    </item>
+    <item>
+      <title>Best Quote on Talent</title>
+      <link>https://kaushalbundel.com/posts/best-quote-on-talent/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/best-quote-on-talent/</guid>
+      <description>The mundane nature of Talent</description>
+    </item>
+    <item>
+      <title>Jevons Paradox: A lament for using more</title>
+      <link>https://kaushalbundel.com/posts/jevons-paradox/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/jevons-paradox/</guid>
+      <description>Understanding Jevons Paradox</description>
+    </item>
+    <item>
+      <title>Dev Log (10/19/2023) (Flutter and Dart)</title>
+      <link>https://kaushalbundel.com/posts/dev-log-10-19-2023/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/dev-log-10-19-2023/</guid>
+      <description>Development Logs for Flutter and Dart</description>
+    </item>
+    <item>
+      <title>Emacs Keybindings</title>
+      <link>https://kaushalbundel.com/posts/emacs-vanilla-keybindings/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/emacs-vanilla-keybindings/</guid>
+      <description>Reference Guide for Emacs Keybindings</description>
+    </item>
+    <item>
+      <title>Notes I Beg to Differ</title>
+      <link>https://kaushalbundel.com/posts/notes-i-beg-to-differ/</link>
+      <pubDate>Tue, 15 Aug 2023 21:29:45 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/notes-i-beg-to-differ/</guid>
+      <description>Notes from the article I beg to differ Author: Howard Marks In Investing world, to earn above than average return you need to be different. This means doing things, thinking things in a manner which other people are not doing.
+&amp;ldquo;You can&amp;rsquo;t take the same actions as everyone else and expect to outperform. If you hope to distinguish yourself in terms of performance, you have to depart from the pack. But, having departed, the difference will only be positive if your choice of strategies and tactics in correct and/or you are able to execute better.</description>
+    </item>
+    <item>
+      <title>User Story</title>
+      <link>https://kaushalbundel.com/posts/2021-01-19-user-story/</link>
+      <pubDate>Tue, 15 Aug 2023 21:29:45 +0530</pubDate>
+      <guid>https://kaushalbundel.com/posts/2021-01-19-user-story/</guid>
+      <description>Reference Guide for Writing User Story</description>
+    </item>
+    <item>
+      <title>Notes on Client/end User&#39;s Discovery process</title>
+      <link>https://kaushalbundel.com/posts/2021-01-26-client-discovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/2021-01-26-client-discovery/</guid>
+      <description>Study notes on Client/User Interview</description>
+    </item>
+    <item>
+      <title>Notes on UAT</title>
+      <link>https://kaushalbundel.com/posts/2021-01-20-uat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kaushalbundel.com/posts/2021-01-20-uat/</guid>
+      <description>Study notes on how to User Acceptance Testing</description>
+    </item>
+  </channel>
+</rss>
