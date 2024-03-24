@@ -9,7 +9,7 @@ draft = false
 +++
 
 
-# Basic Usage of LLM's
+# Basic Usage of LLM
 
 
 ```python
