@@ -1,7 +1,7 @@
 +++
 title = "Notes on Building a Meditation App (Day 17)"
 author = ["Kaushal Bundel"]
-lastmod = 2024-04-19T16:57:55+05:30
+lastmod = 2024-04-21
 tags = ["business", "meditationapp", "Business", "DevNotes"]
 categories = ["MeditationApp"]
 draft = false
@@ -43,3 +43,4 @@ The next step is to identify the features necessary for the MVP, and then, simpl
 5.  Account Creation
 6.  Login/Logout (using google + email authentication)
 7.  Basic Profile Creation
+
