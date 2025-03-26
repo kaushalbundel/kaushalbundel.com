@@ -2,137 +2,694 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Feb 2024 00:15:00 +0530</lastBuildDate>
-    <atom:link href="https://kaushalbundel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Mar 2025 01:54:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Writing Books and making systems to fool oneself</title>
-      <link>https://kaushalbundel.com/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</link>
-      <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</guid>
-      <description>I am stickler for reading writing books written by the writers themselves. I have read three of them, On writing by Stephen King, Writing Badly is Easy By Amitava Kumar and Novalist as a Vocation by Haruki Murakami, along with the description of a writer&amp;rsquo;s day and other related stuff in the books and blogs by Tim Ferris.It&amp;rsquo;s fascinating to hear writers talk about the gruesome writing rituals they follow, the ways in which they developed their writing skills, and how they overcame numerous hardships to become masters of their craft.</description>
+      <title>Using uv for python package management</title>
+      <link>http://localhost:1313/posts/20250326t002049--using-uv-for-python-package-management__emacs_python/</link>
+      <pubDate>Wed, 26 Mar 2025 00:20:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20250326t002049--using-uv-for-python-package-management__emacs_python/</guid>
+      <description>&lt;h2 id=&#34;what-is-uv&#34;&gt;What is UV?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;An fast python package manager and project manager (Written in Rust)&lt;/li&gt;
+&lt;li&gt;replaces pip, pyvenv, virtualenv etc.&lt;/li&gt;
+&lt;li&gt;Runs scripts&lt;/li&gt;
+&lt;li&gt;Installs and Manages Python versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;UV can be installed using any one of the package managers (homebrew, pacman etc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;commands&#34;&gt;Commands&lt;/h2&gt;
+&lt;h3 id=&#34;initializing-a-project&#34;&gt;Initializing a project&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv init &amp;lt;project_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;The above command creates a folder named &amp;lt;project_name&amp;gt;. Inside the project name there is a complete project directory including the virtual environment. UV expects you to follow this project structure.
+&lt;ul&gt;
+&lt;li&gt;Project Structure:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── .venv
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── lib
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── pyvenv.cfg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── .python-version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── README.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── main.py
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── pyproject.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── uv.lock
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;pyproject-dot-toml&#34;&gt;pyproject.toml&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;This file contains the metadata about the project in question, that can either be added manually by editing this file or by running certain commands. Sample file:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  [project]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;name = &amp;#34;hello-world&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;version = &amp;#34;0.1.0&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;description = &amp;#34;Add your description here&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;readme = &amp;#34;README.md&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dependencies = []
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;adding-dependencies-to-the-project&#34;&gt;Adding dependencies to the project&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv add request &lt;span class=&#34;c1&#34;&gt;#package versions can be specified&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;removing-dependencies-from-the-project&#34;&gt;Removing dependencies from the project&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv remove request
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;running-a-program-and-running-a-script&#34;&gt;Running a program and running a script&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#program&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv add flask
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv run --flask run -p &lt;span class=&#34;m&#34;&gt;3000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#script&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv run &amp;lt;python_file_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;updating-the-environment&#34;&gt;Updating the environment&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv sync
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;note-uv-does-not-activate-virtual-environment-using-these-command-dot-one-needs-to-activate-the-virtual-environment-first-before-running-scripts-or-programs-dot&#34;&gt;Note: UV does not activate virtual environment using these command. One needs to activate the virtual environment first before running scripts or programs.&lt;/h3&gt;
+&lt;h3 id=&#34;creating-virtual-environment-using-uv&#34;&gt;Creating virtual environment using uv&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv venv &lt;span class=&#34;c1&#34;&gt;#creates .venv&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv venv &amp;lt;venv_name&amp;gt; &lt;span class=&#34;c1&#34;&gt;#creates virtual environment named venv_name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;integration-with-emacs&#34;&gt;Integration with emacs&lt;/h2&gt;
+&lt;h3 id=&#34;install-uv-mode-link&#34;&gt;Install uv-mode: &lt;a href=&#34;https://github.com/z80dev/uv-mode&#34;&gt;link&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;instructions&#34;&gt;Instructions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UV Mode works automatically once installed. Simply open a Python file in a project that has a .venv directory, and UV Mode will activate the appropriate virtual environment.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Notes on Building a meditation app (Day 2)</title>
-      <link>https://kaushalbundel.com/posts/meditation-app-day-2/</link>
-      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/meditation-app-day-2/</guid>
-      <description>Development Activity Task Adding Ambient music to the meditation session Option 1: Create a local app state, store the value of the widget state in that app state. Use the app state in the meditation section Option 2: Create a page parameter, Pass the widget state in the page parameter and use the page parameter in the meditation session So far, having tried both of these methods, I am not able to get the looping music to work.</description>
+      <title>Reference Guide for CSS</title>
+      <link>http://localhost:1313/posts/20240615t090157--reference-guide-for-css__basics_blog_learning_programming_study/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20240615t090157--reference-guide-for-css__basics_blog_learning_programming_study/</guid>
+      <description>&lt;h3 id=&#34;css--cascading-style-sheet&#34;&gt;CSS (Cascading Style Sheet)&lt;/h3&gt;
+&lt;p&gt;CSS is nothing but the collection of selectors, their properties and values that help in styling the website in a way that is desired.&lt;/p&gt;
+&lt;h3 id=&#34;rules-of-css&#34;&gt;Rules of CSS&lt;/h3&gt;
+&lt;p&gt;Rules are the order in which the CSS is applied on a web page.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Rule 1: Specificity&lt;/p&gt;
+&lt;p&gt;The more specific the rule, the higher is the priority&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;green&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/*Type selectors (Lowest Specifity)*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;text-block&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;yellow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* class selector, denote by &amp;#34;.&amp;#34;, (Medium Specifity)*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;text-block&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;teal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/*id selector, denoted by &amp;#34;#&amp;#34; (Highest Specifity)*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;/* {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;   color: white; /*Universal selector, No specifity*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;err&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rule 2: Inheritance&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Notes on Building a meditation app (Day 1)</title>
-      <link>https://kaushalbundel.com/posts/meditation-app-day-1/</link>
-      <pubDate>Tue, 06 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/meditation-app-day-1/</guid>
-      <description>Defining the Constraints Feature Constraint: The time spent on an activity should be minimal, yet the feature/activity should offer relief from day-to-day stressors during that period. Feature Constraint: The activity should seamlessly integrate into daily routines. Developmental Constraint: I should be able to reuse already developed features such as the login flow, registration flow, meditation timer, and journal. Cost Constraint: The development cost should be limited to less than 50,000 INR.</description>
+      <title>Configuring Screen Time on Apps</title>
+      <link>http://localhost:1313/posts/20240503t115611--configuring-screen-time__article_behavioural_misc_productmanagement/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20240503t115611--configuring-screen-time__article_behavioural_misc_productmanagement/</guid>
+      <description>&lt;p&gt;The Note tries to understand mobile screen time control and presents current and proposed strategies. The inspiration of the article came from an excellent blog-post by Kristen Berman and her excellent product breakdown blog (&lt;a href=&#34;https://kristenberman.substack.com/&#34;&gt;kristenberman.substack.com&lt;/a&gt;). Do subscribe!!&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In behavioral science, the problems affecting behavior can be segregated in i-frame and s-frame.&lt;/p&gt;
+&lt;p&gt;i-frame refers to individual frame of reference. Here the onus is on the individual to take action on the basis of their motivation, habits, biases and mindset.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes of Building a Meditation App (Day 18)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-18/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-18/</guid>
+      <description>&lt;h2 id=&#34;i-found-this-excellent-product-breakdown-of-calm--meditation-app--how-calm-uses-premium-to-motivate-dot-this-article-delves-on-the-following-key-points&#34;&gt;I found this excellent product breakdown of Calm(Meditation App),&lt;a href=&#34;https://kristenberman.substack.com/p/how-calm-uses-premium-to-motivate&#34;&gt;How Calm uses premium to motivate&lt;/a&gt;. This article delves on the following key points:&lt;/h2&gt;
+&lt;p&gt;Meditation is often perceived as a challenging pursuit. The behavioral and mental shifts following regular meditation practice vary from person to person and typically emerge after a sustained period. Moreover, tailoring the environment to enhance each individual&amp;rsquo;s experience is not always possible. Consider the scenario where you&amp;rsquo;ve resolved to meditate, aiming to silence the cacophony of thoughts. You download an app and subscribe. Despite setting this intention and taking action, the likelihood of experiencing a transformative, day-altering meditation session is relatively slim. Contrast this with joining a gym. Discontent with your health and ongoing physical issues, you muster the courage to sign up for a premium gym membership. Surrounded by individuals showcasing their physical achievements, you&amp;rsquo;re motivated by the possibility of similar success. Your first session, amidst gleaming equipment, ignites a thrill and a satisfying sensation in your biceps, affirming your decision.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 17)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-17/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-17/</guid>
+      <description>&lt;h2 id=&#34;deciding-what-to-build-for-phase-1&#34;&gt;Deciding what to build for phase 1&lt;/h2&gt;
+&lt;p&gt;For the past few days, I&amp;rsquo;ve been feeling stuck. I thought I was on the brink of completing my app, but for some reason, I couldn&amp;rsquo;t bring myself to do it. My progress was hindered by multiple factors:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I began to doubt myself and my project. I questioned whether this product would indeed help users achieve a sense of calm in their day-to-day lives. I wondered if the product could offer a momentary respite amid their hectic schedules. To alleviate my doubts, I turned to research papers, most of which concluded that tracking and monitoring do help in identifying and managing stressors, with many people experiencing significant mental health benefits. I also read reviews of competing products and discovered that users greatly benefited from similar apps.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding *args and **kwargs with unpacking in Python</title>
+      <link>http://localhost:1313/posts/20240418t184942--understanding-args-and-kwargs-in-python__blog_learning_programming/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20240418t184942--understanding-args-and-kwargs-in-python__blog_learning_programming/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;For a very long time, I have been confused about *args and **kwargs in python. This is a short summary of what these terms mean.&lt;/p&gt;
+&lt;p&gt;Before I go deep into them, I have to make a clear distinction between argument and parameters. For so long, I have been confused about them and used them interchangeably. In theory:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Parameter&lt;/strong&gt;: These are placeholder values used while a function is defined.
+&lt;strong&gt;Arguments&lt;/strong&gt;: These are the actual values passed into the function when it is called.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ChatGpt Prompt Engineering- Part V - Using ChatGPT for Transforming text</title>
+      <link>http://localhost:1313/posts/chat-gpt-prompt-engineering-for-developers-v/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chat-gpt-prompt-engineering-for-developers-v/</guid>
+      <description>&lt;h1 id=&#34;basic-usage-of-llms&#34;&gt;Basic Usage of LLM&amp;rsquo;s&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#loading the boiler plate code&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;openai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;dotenv&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;find_dotenv&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#library to load the local environment variables jupyter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;api_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;OPENAI_API_KEY&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#creating the basic prompting function&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;client&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;openai&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenAI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get_completion&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;gpt-3.5-turbo&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;role&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;user&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;client&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;completions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;temperature&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;choices&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;llm-as-a-transforming-device&#34;&gt;LLM as a Transforming device&lt;/h2&gt;
+&lt;p&gt;Consider the below text in Sanskrit. We can translate this text in the language for our choice with the tonal quality that we aspire.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;text&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;Please translate the sanskrit text &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; in the hindi and english language. Use the following rules to make the translation:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;1. Output the original text and the both translations in the form of python list
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;2. The tone of the translation should be warn, friendly and personal. 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;get_completion&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;```python
+original_text = [&amp;quot;योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।&amp;quot;, &amp;quot;सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।&amp;quot;]
+
+hindi_translation = [&amp;quot;योगस्थः कर्म करो, संग से दूर होकर धनंजय।&amp;quot;, &amp;quot;सिद्धि और असिद्धि में समान बनकर समता को योग कहा जाता है।&amp;quot;]
+
+english_translation = [&amp;quot;Stay focused on your actions while letting go of attachment, Arjuna.&amp;quot;, &amp;quot;Being equal in success and failure is called yoga.&amp;quot;]
+
+translations = [original_text, hindi_translation, english_translation]
+print(translations)
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;original_text&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;hindi_translation&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;योगस्थः कर्म करो, संग से दूर होकर धनंजय।&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;सिद्धि और असिद्धि में समान बनकर समता को योग कहा जाता है।&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;english_translation&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Stay focused on your actions while letting go of attachment, Arjuna.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Being equal in success and failure is called yoga.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;translations&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;original_text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hindi_translation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;english_translation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;translations&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;[[&#39;योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।&#39;, &#39;सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।&#39;], [&#39;योगस्थः कर्म करो, संग से दूर होकर धनंजय।&#39;, &#39;सिद्धि और असिद्धि में समान बनकर समता को योग कहा जाता है।&#39;], [&#39;Stay focused on your actions while letting go of attachment, Arjuna.&#39;, &#39;Being equal in success and failure is called yoga.&#39;]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Expanding the given translation into a socratic conversation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ChatGpt Prompt Engineering- Part IV - Using ChatGPT for Inference tasks</title>
+      <link>http://localhost:1313/posts/chat-gpt-prompt-engineering-for-developers-iv/</link>
+      <pubDate>Tue, 26 Mar 2024 04:00:13 +0530</pubDate>
+      <guid>http://localhost:1313/posts/chat-gpt-prompt-engineering-for-developers-iv/</guid>
+      <description>&lt;h1 id=&#34;basic-usage-of-llms&#34;&gt;Basic Usage of LLM&amp;rsquo;s&lt;/h1&gt;
+&lt;h3 id=&#34;loading-the-boiler-plate-code&#34;&gt;Loading the boiler plate code&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;openai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;dotenv&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;find_dotenv&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#library to load the local environment variables jupyter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;api_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;OPENAI_API_KEY&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#creating the basic prompting function&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;client&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;openai&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenAI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get_completion&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;gpt-3.5-turbo&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;role&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;user&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;client&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;completions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;temperature&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;choices&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;llm-as-a-inference-device&#34;&gt;LLM as a Inference Device&lt;/h2&gt;
+&lt;p&gt;Inference is essentially extraction of specific property of the text fed. These could be sentiments, specific key-value pairs, tone, labels, names etc.&lt;br&gt;
+The application of this function can be very wide, I hope to illustrate a few examples here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ChatGpt Prompt Engineering- Part III - Using ChatGPT for summarization tasks</title>
+      <link>http://localhost:1313/posts/chatgpt-prompt-engineering-for-developers-iii/</link>
+      <pubDate>Sun, 24 Mar 2024 14:00:13 +0530</pubDate>
+      <guid>http://localhost:1313/posts/chatgpt-prompt-engineering-for-developers-iii/</guid>
+      <description>&lt;h1 id=&#34;basic-usage-of-llm&#34;&gt;Basic Usage of LLM&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#loading the boiler plate code&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;openai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;dotenv&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;find_dotenv&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#library to load the local environment variables jupyter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;api_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;OPENAI_API_KEY&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#creating the basic prompting function&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;client&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;openai&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenAI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get_completion&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;gpt-3.5-turbo&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;role&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;user&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;client&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;completions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;messages&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;temperature&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;choices&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;using-chatgpt-for-summarization-tasks&#34;&gt;Using ChatGPT for summarization tasks&lt;/h2&gt;
+&lt;p&gt;This is the most common usecase and I am sure most of the people are using ChatGPT for this activity. But there are subtle tricks that one can use to enhance the experience of summarization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ChatGpt Prompt Engineering- Part II - An Iterative Approach</title>
+      <link>http://localhost:1313/posts/chatgpt-prompt-engineering-for-developers-ii/</link>
+      <pubDate>Thu, 21 Mar 2024 14:00:13 +0530</pubDate>
+      <guid>http://localhost:1313/posts/chatgpt-prompt-engineering-for-developers-ii/</guid>
+      <description>&lt;h1 id=&#34;prompt-engineering-as-an-iterative-process&#34;&gt;Prompt Engineering as an Iterative process&lt;/h1&gt;
+&lt;p&gt;There is not single effective method for getting the desired results from the a LLM. For general tasks the process of getting response to a desired problem is simple, whereas for specific problems one needs to used iterative methods to arrive at desired results.&lt;/p&gt;
+&lt;p&gt;In addition sometime we just do not know what the final result will look like, in such situations moulding the LLM response is essential.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ChatGpt Prompt Engineering- Part I</title>
+      <link>http://localhost:1313/posts/chatgpt-prompt-engineering-for-developers-i/</link>
+      <pubDate>Wed, 20 Mar 2024 14:38:13 +0530</pubDate>
+      <guid>http://localhost:1313/posts/chatgpt-prompt-engineering-for-developers-i/</guid>
+      <description>&lt;h1 id=&#34;understanding-prompt-engineering&#34;&gt;Understanding Prompt Engineering&lt;/h1&gt;
+&lt;p&gt;We live in a knowledge economy where paramount importance must be placed on information retrieval and absorption. My journey with ChatGPT began when I started experimenting with the model and discovered use cases that were helpful to me. However, working with a general-purpose model presented its own challenges. As I continued practicing, I became acquainted with specific use cases of ChatGPT, such as efficiently performing standard NLP tasks and generating text summaries, which significantly simplified and enhanced my work. For this purpose, I leveraged third-party tools. Nonetheless, there were times when I struggled to achieve the desired result.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 16)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-16/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-16/</guid>
+      <description>&lt;h2 id=&#34;another-exiting-tutorial-by-the-digital-pro-s-nocode-academy-on-building-beautiful-charts-in-flutterflow-dot&#34;&gt;&lt;!-- raw HTML omitted --&gt;WAITING&lt;!-- raw HTML omitted --&gt; Another exiting tutorial by &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/@the_digitalpro&#34;&gt;The Digital Pro&amp;rsquo;s NoCode Academy&lt;/a&gt;&amp;rdquo; on  &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=Dr5xHfk1nQY&amp;amp;ab_channel=TheDigitalPro%27sNoCodeAcademy&#34;&gt;building beautiful charts&lt;/a&gt;&amp;rdquo; in Flutterflow.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;State &amp;ldquo;WAITING&amp;rdquo;    from &amp;ldquo;IN-PROGRESS&amp;rdquo; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-20 Wed 23:31] &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;
+I should complete basic Dart and flutter course before jumping on this task.&lt;/li&gt;
+&lt;li&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-20 Wed 18:12]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: This has a special utility for me as with this I could create the date wise charts for &amp;ldquo;Meditation completion&amp;rdquo; and &amp;ldquo;Mood Board Completion&amp;rdquo; tracking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 14)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-14/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-14/</guid>
+      <description>&lt;h2 id=&#34;enabling-audio-in-the-app&#34;&gt;Enabling Audio in the App&lt;/h2&gt;
+&lt;p&gt;This is a long standing task. I tried to implement this feature but was unsuccessful. Let&amp;rsquo;s see how we fare now.&lt;/p&gt;
+&lt;h3 id=&#34;supporting-material&#34;&gt;Supporting Material&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://community.flutterflow.io/c/community-custom-widgets/post/play-background-music-on-loop-custom-actions-MeEMMe5JdmsZQFM&#34;&gt;Community Solution to the sound looping problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=yl2LOhJl964&amp;amp;ab_channel=TheDigitalPro%27sNoCodeAcademy&#34;&gt;Digital Pro&amp;rsquo;s No Code Academy Tutorial on Custom Action&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;important-background-context&#34;&gt;Important Background Context&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;BuildContext&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Flutter, the build context represents the location of a widget within the widget tree. It allows widgets to interact with other widgets and access data and services provided by higher-level widgets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;steps-completed&#34;&gt;Steps Completed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Used the code structure as provided in the Community Solution&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 13)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-13/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-13/</guid>
+      <description>&lt;h2 id=&#34;product-related-thoughts&#34;&gt;Product Related Thoughts&lt;/h2&gt;
+&lt;p&gt;Day before Yesterday, I had a fascinating discussion with a UI/UX specialist that delved into the core essence of our product and overall design philosophy. The conversation naturally drifted towards the uniqueness of our meditation app, its necessity, and the critical aspect of user engagement. This got me rethinking about the core nature of the app.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About need for this meditation app&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The fundamental concept behind our product resonates with me. Even though I haven&amp;rsquo;t personally experienced it yet, I believe it holds significant benefits for its users. Perhaps I should dive in and immerse myself in its features to truly grasp its value and impact on my own well-being.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 12)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-12/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-12/</guid>
+      <description>&lt;h3 id=&#34;todo-an-exciting-new-feature-has-been-launched-by-flutterflow-which-can-be-quite-useful-for-user-onboarding-this-feature-is-called-walkthrough-through-this-feature-i-can-do-entire-app-walkthrough-while-the-user-first-logs-in-the-app&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; An exciting new feature has been launched by Flutterflow which can be quite useful for user onboarding. This feature is called &amp;ldquo;walkthrough&amp;rdquo;. Through this feature, I can do entire app walkthrough while the user first logs in the app.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=FFpR1SDrZEQ&#34;&gt;Flutterflow demo on app walkthrough&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;another-exiting-tutorial-by-the-digital-pro-s-nocode-academy-on-building-beautiful-charts-in-flutterflow-dot-this-has-a-special-utility-for-me-as-with-this-i-could-create-the-date-wise-charts-for-meditation-completion-and-mood-board-completion-tracking-dot&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Another exiting tutorial by &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/@the_digitalpro&#34;&gt;The Digital Pro&amp;rsquo;s NoCode Academy&lt;/a&gt;&amp;rdquo; on  &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=Dr5xHfk1nQY&amp;amp;ab_channel=TheDigitalPro%27sNoCodeAcademy&#34;&gt;building beautiful charts&lt;/a&gt;&amp;rdquo; in Flutterflow. This has a special utility for me as with this I could create the date wise charts for &amp;ldquo;Meditation completion&amp;rdquo; and &amp;ldquo;Mood Board Completion&amp;rdquo; tracking.&lt;/h3&gt;
+&lt;h3 id=&#34;implement-good-to-have-user-experience&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; - Implement Good to have user experience&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.flutterflow.io/item/3UhgN09SYvqorpSOnYAv&#34;&gt;Ripple Wave effect&lt;/a&gt; : This can be used on the meditation page : &lt;strong&gt;Implementation complete&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation--important-from-the-pov-of-creating-custom-widgets&#34;&gt;Implementation (Important from the POV of creating Custom Widgets)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Video: &lt;a href=&#34;https://www.youtube.com/watch?v=QUBS0KFfwB4&amp;amp;t=5s&amp;amp;ab_channel=FlutterFlow&#34;&gt;Flutterflow Tutorial on Custom Widgets&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 11)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-11/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-11/</guid>
+      <description>&lt;p&gt;We are at the last leg of the development effort for Phase 0. This is a time filled with both fear and excitement. The stakes are high and the possibility of mistakes is significant, yet the opportunity for learning is abundant. In terms of developmental efforts,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Core functionalities are defined and implemented&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Major UX work is complete. The app flow is more or less defined. For whom the app is, What the app will do and how it will work is also defined&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 10)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-10/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-10/</guid>
+      <description>&lt;h2 id=&#34;today-s-implementation&#34;&gt;Today&amp;rsquo;s Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;nav-bar-improvements&#34;&gt;&lt;!-- raw HTML omitted --&gt;WAITING&lt;!-- raw HTML omitted --&gt; Nav-Bar improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;State &amp;ldquo;WAITING&amp;rdquo;    from &amp;ldquo;IN-PROGRESS&amp;rdquo; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-02 Sat 15:39] &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;
+Flutter needs to be installed on the Device&lt;/li&gt;
+&lt;li&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-02 Sat 15:23]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Flutterflow includes three types of Nav-bar implementations: Flutter Default Nav Bar, Google Nav Bar and Floating Nav Bar. I had initially implemented  Flutter Default Nav Bar, the problem with the implementation was that the Nav Bar throws an error if you need a Nav bar on the pages for easy navigation that are not present on the Nav Bar (for eg. I do not have the meditation timer page on the nav bar yet I want the Nav bar to be present on the page for easy user navigation).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exercism Programming Advice</title>
+      <link>http://localhost:1313/posts/exercism-programming-advice/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/exercism-programming-advice/</guid>
+      <description>Response to a programming question raised by me on Exercism</description>
+    </item>
+    <item>
+      <title>My reflections on - Novelist as a Vocation-Haruki Murakami</title>
+      <link>http://localhost:1313/posts/20240212t002026--reflection-on-novelist-as-a-vocation-murakami__books_personal_productivity_quotes/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20240212t002026--reflection-on-novelist-as-a-vocation-murakami__books_personal_productivity_quotes/</guid>
+      <description>&lt;p&gt;In the sequence of reading books by writers about writing&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; I recently reread the book, &amp;ldquo;&lt;a href=&#34;https://www.amazon.in/Novelist-as-Vocation-Haruki-Murakami/dp/0451494644&#34;&gt;Novelist as a Vocation&lt;/a&gt;&amp;rdquo; by &lt;a href=&#34;https://www.newyorker.com/culture/the-new-yorker-interview/the-underground-worlds-of-haruki-murakami&#34;&gt;Haruki Murakami&lt;/a&gt;. He is one of my favorite writers, and I was fascinated to understand his writing process.&lt;/p&gt;
+&lt;p&gt;This is not the first book where he explains his thoughts about his writing process, his other book &amp;ldquo;&lt;a href=&#34;https://www.amazon.in/What-Talk-About-When-Running/dp/0099526158&#34;&gt;What I Talk About When I Talk About Running&lt;/a&gt;&amp;rdquo; had some brief moments on the topic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 9)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-9/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-9/</guid>
+      <description>&lt;h2 id=&#34;today-s-implementation&#34;&gt;Today&amp;rsquo;s Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;design-consistancy-should-be-ensured--eg-dot-in-some-places-back-is-a-button-while-on-others-it-is-an-appbar-icon&#34;&gt;&lt;!-- raw HTML omitted --&gt;DONE&lt;!-- raw HTML omitted --&gt; Design consistancy should be ensured (eg. in some places &amp;ldquo;back&amp;rdquo; is a button while on others it is an Appbar icon)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;State &amp;ldquo;DONE&amp;rdquo;       from &amp;ldquo;IN-PROGRESS&amp;rdquo; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-02-29 Thu 16:11]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-02-28 Wed 21:14]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 8)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-8/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-8/</guid>
+      <description>&lt;h2 id=&#34;today-s-implementation&#34;&gt;Today&amp;rsquo;s Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;design-consistancy-should-be-ensured--eg-dot-in-some-places-back-is-a-button-while-on-others-it-is-an-appbar-icon&#34;&gt;&lt;!-- raw HTML omitted --&gt;IN-PROGRESS&lt;!-- raw HTML omitted --&gt;: Design consistancy should be ensured (eg. in some places &amp;ldquo;back&amp;rdquo; is a button while on others it is an Appbar icon)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-02-28 Wed 21:14]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation-details&#34;&gt;Implementation Details&lt;/h4&gt;
+&lt;p&gt;Pages where back button is a &amp;ldquo;button&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Track your mood page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pages with design changes&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 7)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-7/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-7/</guid>
+      <description>&lt;h2 id=&#34;note-on-a-week-long-absence&#34;&gt;Note on a week-long absence&lt;/h2&gt;
+&lt;p&gt;Well, I just recovered from a severe viral infection. A changing weather and a family function triggered the concern. Things were a bit difficult but I am learning to take these circumstances in my stride. Thanks to the wonder of modern medicine and love of near ones.🙏🏼&lt;/p&gt;
+&lt;h2 id=&#34;recap-of-the-last-session&#34;&gt;Recap of the last session&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Completed the UI for Mood Tracker&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Streamlined how reflection(notes after meditation session) and related information are stored in the backend&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 6)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-6/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-6/</guid>
+      <description>&lt;h3 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h3&gt;
+&lt;p&gt;Flutterflow team recently released some exceptional videos to help with the UI problems that I am currently facing. These problems include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I am creating for one set screen and in reality the app will be used in multiple devices of varied sizes. A common guide for getting a size reference is available on android developer guide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/_20240216_014034screenshot.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Even though the size that I have chosen makes sense, still due to faulty layout configuration negative spaces/gaps will get affected if the screen size deviates from the standard one.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 5)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-5/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-5/</guid>
+      <description>&lt;h2 id=&#34;development-activity-1&#34;&gt;Development Activity # 1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The user should be able to click the appropriate mood indicator and mark the mood for the day. After clicking appropriate indicator the indicator value should get stored in the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Page parameter(mood) created on the meditation page&lt;/li&gt;
+&lt;li&gt;The mood value, which is stored in the widget state is passed from Homepage to the meditation page&lt;/li&gt;
+&lt;li&gt;To store the value in firebase:
+&lt;ol&gt;
+&lt;li&gt;Add the field in the firebase database&lt;/li&gt;
+&lt;li&gt;Add the value on the firebase database on Flutterflow&lt;/li&gt;
+&lt;li&gt;Deploy the firebase database on Flutterflow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Problem: The value of the notes is not getting stored in the session collection, infact I am not sure where the value is getting stored 🧐&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 4)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-4/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-4/</guid>
+      <description>&lt;h3 id=&#34;task-continue-from-the-previous-day&#34;&gt;Task continue from the previous day&lt;/h3&gt;
+&lt;p&gt;(Task: Adding a mood board to check on the user mood as soon as the user opens up the app)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The mood board should constitute a design that should indicate 5 faces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation-notes&#34;&gt;Implementation Notes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Feature design notes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Option 1: Create a new component. Create 5 containers with different emoji faces. These different faces also have their corresponding color variants. The color switching will happen with the help of a radio button. When the radio button is clicked, the conditional display of emoji buttons will be triggered, displaying only the selected option. The problem with this implementation is how to control when two or more emojis are clicked one after another. There are no hooks that enable me to link these separate bits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes on Building a meditation app (Day 3)</title>
-      <link>https://kaushalbundel.com/posts/meditation-app-day-3/</link>
-      <pubDate>Mon, 05 Feb 2024 17:08:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/meditation-app-day-3/</guid>
-      <description>Development Activity Task Adding a mood board to check on the user mood as soon as the user opens up the app ATTACH [] The user should be able view the mood board as soon as they open the app.
-[] The user should be able to click the appropriate mood indicator and mark the mood for the day. After click appropriate indicator the indicator value should get stored in the database</description>
+      <link>http://localhost:1313/posts/meditation-app-day-3/</link>
+      <pubDate>Sun, 11 Feb 2024 00:19:50 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-3/</guid>
+      <description>&lt;h2 id=&#34;development-activity&#34;&gt;Development Activity&lt;/h2&gt;
+&lt;h3 id=&#34;task-adding-a-mood-board-to-check-on-the-user-mood-as-soon-as-the-user-opens-up-the-app&#34;&gt;Task: Adding a mood board to check the user mood as soon as the app is opened&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The user should be able view the mood board as soon as they open the app&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The user should be able to click the appropriate mood indicator and mark the mood for the day. After click appropriate indicator the indicator value should get stored in the database&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The past values/mood faces of the mood indicator should be shown on the &amp;ldquo;Reflections&amp;rdquo; page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Writing Books and making systems to fool oneself</title>
+      <link>http://localhost:1313/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</link>
+      <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</guid>
+      <description>&lt;p&gt;I am stickler for reading writing books written by the writers themselves. I have read three of them, &lt;a href=&#34;https://www.amazon.in/Writing-Memoir-Craft-Stephen-King/dp/1444723251&#34;&gt;On writing by Stephen King&lt;/a&gt;, &lt;a href=&#34;https://www.amazon.in/Writing-Badly-Easy-Amitava-Kumar/dp/9388292510&#34;&gt;Writing Badly is Easy By Amitava Kumar&lt;/a&gt; and &lt;a href=&#34;https://www.amazon.in/Novelist-Vocation-charmingly-idiosyncratic-internationally/dp/1911215388?source=ps-sl-shoppingads-lpcontext&amp;amp;ref_=fplfs&amp;amp;psc=1&amp;amp;smid=A1WYWER0W24N8S&#34;&gt;Novalist as a Vocation by Haruki Murakami&lt;/a&gt;, along with the description of a writer&amp;rsquo;s day and other related stuff in the books and blogs by Tim Ferris.It&amp;rsquo;s fascinating to hear writers talk about the gruesome writing rituals they follow, the ways in which they developed their writing skills, and how they overcame numerous hardships to become masters of their craft. Perhaps what resonates with me most is the realization that these superhumans are also mortal, facing the same challenges and struggles that we as humans encounter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 2)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-2/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-2/</guid>
+      <description>&lt;h2 id=&#34;development-activity&#34;&gt;Development Activity&lt;/h2&gt;
+&lt;h3 id=&#34;task-adding-ambient-music-to-the-meditation-session&#34;&gt;Task Adding Ambient music to the meditation session&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Option 1: Create a local app state, store the value of the widget state in that app state. Use the app state in the meditation section&lt;/li&gt;
+&lt;li&gt;Option 2: Create a page parameter, Pass the widget state in the page parameter and use the page parameter in the meditation session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So far, having tried both of these methods, I am not able to get the looping music to work. In both of the above options, the app was not compiling at all.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 1)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-1/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-1/</guid>
+      <description>&lt;h2 id=&#34;defining-the-constraints&#34;&gt;Defining the Constraints&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Feature Constraint: The time spent on an activity should be minimal, yet the feature/activity should offer relief from day-to-day stressors during that period.&lt;/li&gt;
+&lt;li&gt;Feature Constraint: The activity should seamlessly integrate into daily routines.&lt;/li&gt;
+&lt;li&gt;Developmental Constraint: I should be able to reuse already developed features such as the login flow, registration flow, meditation timer, and journal.&lt;/li&gt;
+&lt;li&gt;Cost Constraint: The development cost should be limited to less than 50,000 INR.&lt;/li&gt;
+&lt;li&gt;Time Constraint: The app should be live on either the Android Play Store or Apple App Store by the end of March.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;expansion-of-features-that-have-already-been-developed&#34;&gt;Expansion of features that have already been developed&lt;/h2&gt;
+&lt;h4 id=&#34;adding-ambient-music-to-the-meditation-session&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Adding ambient music to the meditation session&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;DONE&lt;!-- raw HTML omitted --&gt;  Adding ambient music track to the session (Started: &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2024-02-06 Tue 07:30&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;)(Ended: &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2024-02-06 Tue 08:30&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  A choice of 5 or more ambient tracks to choose from&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  Tracks to run through the duration of the session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;adding-a-mood-board-to-check-on-the-user-mood-as-soon-as-the-user-opens-up-the-app&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Adding a mood board to check on the user mood as soon as the user opens up the app&lt;/h4&gt;
+&lt;h4 id=&#34;improving-ui&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Improving UI&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to make buttons standout?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to use different widgets so that the app looks pretty?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;improving-ux&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Improving UX&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to fit in separate components needed for the meditation session (like setting the time, setting the music, starting the session, collecting feedback after the session)?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to improve the journaling experience?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;new-feature-design&#34;&gt;New Feature Design&lt;/h2&gt;
+&lt;h3 id=&#34;fitting-the-basic-features--journal-and-meditation-with-the-core-premise-of-the-app&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Fitting the basic features (Journal and Meditation with the core premise of the app)&lt;/h3&gt;
+&lt;h3 id=&#34;develop-a-tinder-style-quote-gallery&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Develop a Tinder style quote gallery&lt;/h3&gt;
+&lt;h4 id=&#34;adding-share-links-to-social-media&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Adding share links to social media&lt;/h4&gt;
+&lt;h3 id=&#34;redesigning-the-app-to-fit-in-different-features&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Redesigning the App to fit in different features&lt;/h3&gt;
+&lt;h3 id=&#34;payment-gateway-integration&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Payment Gateway Integration??&lt;/h3&gt;
+&lt;h2 id=&#34;development-activity&#34;&gt;Development Activity&lt;/h2&gt;
+&lt;h3 id=&#34;adding-ambient-music-to-the-meditation-session&#34;&gt;Adding ambient music to the meditation session&lt;/h3&gt;
+&lt;h4 id=&#34;commercial-use-music-resources&#34;&gt;Commercial use music resources&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pixabay.com/sound-effects/search/ambient/&#34;&gt;Pixabay.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.videvo.net/royalty-free-sound-effects/ambience/&#34;&gt;videvo.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sound-extensions&#34;&gt;Sound extensions&lt;/h4&gt;
+&lt;p&gt;There needs to be a balance between good audio output and low file size. The following extensions came up in the research.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes on building a meditation app (Day 0)</title>
-      <link>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</link>
+      <link>http://localhost:1313/posts/notes-on-building-a-meditation-app-day-0/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</guid>
-      <description>Objective of the App Time for a short story
-About 1 month back, I got the idea of creating an application that helps in conducting an effective meditation practice. The problem that I was trying to solve was that sometimes after a meditation session my mind was on overdrive and I felt overwhelmed by my thoughts. To channel and understand my thoughts I started the practice of writing a journal. I would use pen and paper to do journaling and the practice helped me to calm down and structure my thoughts.</description>
+      <guid>http://localhost:1313/posts/notes-on-building-a-meditation-app-day-0/</guid>
+      <description>&lt;h2 id=&#34;objective-of-the-app&#34;&gt;Objective of the App&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;strong&gt;Time for a short story&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;About 1 month back, I got the idea of creating an application that helps in conducting an effective meditation practice. The problem that I was trying to solve was that sometimes after a meditation session my mind was on overdrive and I felt overwhelmed by my thoughts. To channel and understand my thoughts I started the practice of writing a journal. I would use pen and paper to do journaling and the practice helped me to calm down and structure my thoughts. Often I would set a meditation timer on my phone and then I would scramble for the pen and paper after the meditation session.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Old Man and the Sea</title>
-      <link>https://kaushalbundel.com/posts/the-old-man-and-the-sea/</link>
+      <link>http://localhost:1313/posts/the-old-man-and-the-sea/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/the-old-man-and-the-sea/</guid>
-      <description>Book Summary Simplistically, This book talks about the journey of an old man in the sea and his efforts to catch a fish. On a deeper level, The book is an allegory of what it means to pursue something. The sea is the vast expense of the world, where one should not venture too far. The huge, deep part of the sea is unpredictable with all manner of dangers like Sharks and unstable sea.</description>
+      <guid>http://localhost:1313/posts/the-old-man-and-the-sea/</guid>
+      <description>&lt;h2 id=&#34;book-summary&#34;&gt;Book Summary&lt;/h2&gt;
+&lt;p&gt;Simplistically, This book talks about the journey of an old man in the sea and his efforts to catch a fish. On a deeper level, The book is an allegory of what it means to pursue something. The sea is the vast expense of the world, where one should not venture too far. The huge, deep part of the sea is unpredictable with all manner of dangers like Sharks and unstable sea.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web Browsing in Emacs - EWW</title>
-      <link>https://kaushalbundel.com/posts/emacs-using-eww/</link>
+      <link>http://localhost:1313/posts/emacs-using-eww/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/emacs-using-eww/</guid>
+      <guid>http://localhost:1313/posts/emacs-using-eww/</guid>
       <description>Reference Guide for EWW</description>
     </item>
     <item>
       <title>Core Action for Products</title>
-      <link>https://kaushalbundel.com/posts/core-action/</link>
+      <link>http://localhost:1313/posts/core-action/</link>
       <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/core-action/</guid>
+      <guid>http://localhost:1313/posts/core-action/</guid>
       <description>Understanding Core Action in the context of Product Management</description>
     </item>
     <item>
       <title>A Gentle Introduction to Ideal Customer Profile</title>
-      <link>https://kaushalbundel.com/posts/icp/</link>
+      <link>http://localhost:1313/posts/icp/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/icp/</guid>
+      <guid>http://localhost:1313/posts/icp/</guid>
       <description>A Gentle Introduction to Ideal Customer Profile</description>
     </item>
     <item>
       <title>Best Quote on Talent</title>
-      <link>https://kaushalbundel.com/posts/best-quote-on-talent/</link>
+      <link>http://localhost:1313/posts/best-quote-on-talent/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/best-quote-on-talent/</guid>
+      <guid>http://localhost:1313/posts/best-quote-on-talent/</guid>
       <description>The mundane nature of Talent</description>
     </item>
     <item>
       <title>Jevons Paradox: A lament for using more</title>
-      <link>https://kaushalbundel.com/posts/jevons-paradox/</link>
+      <link>http://localhost:1313/posts/jevons-paradox/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/jevons-paradox/</guid>
+      <guid>http://localhost:1313/posts/jevons-paradox/</guid>
       <description>Understanding Jevons Paradox</description>
     </item>
     <item>
       <title>Dev Log (10/19/2023) (Flutter and Dart)</title>
-      <link>https://kaushalbundel.com/posts/dev-log-10-19-2023/</link>
+      <link>http://localhost:1313/posts/dev-log-10-19-2023/</link>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/dev-log-10-19-2023/</guid>
+      <guid>http://localhost:1313/posts/dev-log-10-19-2023/</guid>
       <description>Development Logs for Flutter and Dart</description>
     </item>
     <item>
       <title>Emacs Keybindings</title>
-      <link>https://kaushalbundel.com/posts/emacs-vanilla-keybindings/</link>
+      <link>http://localhost:1313/posts/emacs-vanilla-keybindings/</link>
       <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/emacs-vanilla-keybindings/</guid>
+      <guid>http://localhost:1313/posts/emacs-vanilla-keybindings/</guid>
       <description>Reference Guide for Emacs Keybindings</description>
     </item>
     <item>
       <title>Notes I Beg to Differ</title>
-      <link>https://kaushalbundel.com/posts/notes-i-beg-to-differ/</link>
+      <link>http://localhost:1313/posts/notes-i-beg-to-differ/</link>
       <pubDate>Tue, 15 Aug 2023 21:29:45 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/notes-i-beg-to-differ/</guid>
-      <description>Notes from the article I beg to differ Author: Howard Marks In Investing world, to earn above than average return you need to be different. This means doing things, thinking things in a manner which other people are not doing.
-&amp;ldquo;You can&amp;rsquo;t take the same actions as everyone else and expect to outperform. If you hope to distinguish yourself in terms of performance, you have to depart from the pack. But, having departed, the difference will only be positive if your choice of strategies and tactics in correct and/or you are able to execute better.</description>
+      <guid>http://localhost:1313/posts/notes-i-beg-to-differ/</guid>
+      <description>&lt;h1 id=&#34;notes-from-the-article-i-beg-to-differ&#34;&gt;Notes from the article I beg to differ&lt;/h1&gt;
+&lt;h1 id=&#34;author-howard-marks&#34;&gt;Author: Howard Marks&lt;/h1&gt;
+&lt;p&gt;In Investing world, to earn above than average return you need to be different. This means doing things, thinking things in a manner which other people are not doing.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;You can&amp;rsquo;t take the same actions as everyone else and expect to outperform. If you hope to distinguish yourself in terms of performance, you have to depart from the pack. But, having departed, the difference will only be positive if your choice of strategies and tactics in correct and/or you are able to execute better.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>User Story</title>
-      <link>https://kaushalbundel.com/posts/2021-01-19-user-story/</link>
+      <link>http://localhost:1313/posts/2021-01-19-user-story/</link>
       <pubDate>Tue, 15 Aug 2023 21:29:45 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/2021-01-19-user-story/</guid>
+      <guid>http://localhost:1313/posts/2021-01-19-user-story/</guid>
       <description>Reference Guide for Writing User Story</description>
     </item>
     <item>
       <title>Notes on Client/end User&#39;s Discovery process</title>
-      <link>https://kaushalbundel.com/posts/2021-01-26-client-discovery/</link>
+      <link>http://localhost:1313/posts/2021-01-26-client-discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/2021-01-26-client-discovery/</guid>
+      <guid>http://localhost:1313/posts/2021-01-26-client-discovery/</guid>
       <description>Study notes on Client/User Interview</description>
     </item>
     <item>
       <title>Notes on UAT</title>
-      <link>https://kaushalbundel.com/posts/2021-01-20-uat/</link>
+      <link>http://localhost:1313/posts/2021-01-20-uat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/2021-01-20-uat/</guid>
+      <guid>http://localhost:1313/posts/2021-01-20-uat/</guid>
       <description>Study notes on how to User Acceptance Testing</description>
     </item>
   </channel>

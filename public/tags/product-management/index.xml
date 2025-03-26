@@ -2,22 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Product Management on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/tags/product-management/</link>
+    <link>http://localhost:1313/tags/product-management/</link>
     <description>Recent content in Product Management on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kaushalbundel.com/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 May 2024 11:56:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Screen Time on Apps</title>
+      <link>http://localhost:1313/posts/20240503t115611--configuring-screen-time__article_behavioural_misc_productmanagement/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/20240503t115611--configuring-screen-time__article_behavioural_misc_productmanagement/</guid>
+      <description>&lt;p&gt;The Note tries to understand mobile screen time control and presents current and proposed strategies. The inspiration of the article came from an excellent blog-post by Kristen Berman and her excellent product breakdown blog (&lt;a href=&#34;https://kristenberman.substack.com/&#34;&gt;kristenberman.substack.com&lt;/a&gt;). Do subscribe!!&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In behavioral science, the problems affecting behavior can be segregated in i-frame and s-frame.&lt;/p&gt;
+&lt;p&gt;i-frame refers to individual frame of reference. Here the onus is on the individual to take action on the basis of their motivation, habits, biases and mindset.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Core Action for Products</title>
-      <link>https://kaushalbundel.com/posts/core-action/</link>
+      <link>http://localhost:1313/posts/core-action/</link>
       <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/core-action/</guid>
+      <guid>http://localhost:1313/posts/core-action/</guid>
       <description>Understanding Core Action in the context of Product Management</description>
     </item>
   </channel>

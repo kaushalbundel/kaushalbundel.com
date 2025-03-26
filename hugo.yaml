@@ -1,6 +1,7 @@
 baseURL: "https://kaushalbundel.com/"
 title: "Experiments, Thoughts and reflection"
-paginate: 5
+pagination:
+    pagerSize: 5
 theme: [PaperMod]
 
 enableRobotsTXT: true

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>interesting on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/categories/interesting/</link>
-    <description>Recent content in interesting on Experiments, Thoughts and reflection</description>
+    <title>Interesting on Experiments, Thoughts and reflection</title>
+    <link>http://localhost:1313/categories/interesting/</link>
+    <description>Recent content in Interesting on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kaushalbundel.com/categories/interesting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/interesting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Best Quote on Talent</title>
-      <link>https://kaushalbundel.com/posts/best-quote-on-talent/</link>
+      <link>http://localhost:1313/posts/best-quote-on-talent/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/best-quote-on-talent/</guid>
+      <guid>http://localhost:1313/posts/best-quote-on-talent/</guid>
       <description>The mundane nature of Talent</description>
     </item>
     <item>
       <title>Jevons Paradox: A lament for using more</title>
-      <link>https://kaushalbundel.com/posts/jevons-paradox/</link>
+      <link>http://localhost:1313/posts/jevons-paradox/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/jevons-paradox/</guid>
+      <guid>http://localhost:1313/posts/jevons-paradox/</guid>
       <description>Understanding Jevons Paradox</description>
     </item>
   </channel>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Personal on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/categories/personal/</link>
+    <link>http://localhost:1313/categories/personal/</link>
     <description>Recent content in Personal on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Feb 2024 00:15:00 +0530</lastBuildDate>
-    <atom:link href="https://kaushalbundel.com/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Feb 2024 02:26:44 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Books and making systems to fool oneself</title>
-      <link>https://kaushalbundel.com/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</link>
+      <link>http://localhost:1313/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</link>
       <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</guid>
-      <description>I am stickler for reading writing books written by the writers themselves. I have read three of them, On writing by Stephen King, Writing Badly is Easy By Amitava Kumar and Novalist as a Vocation by Haruki Murakami, along with the description of a writer&amp;rsquo;s day and other related stuff in the books and blogs by Tim Ferris.It&amp;rsquo;s fascinating to hear writers talk about the gruesome writing rituals they follow, the ways in which they developed their writing skills, and how they overcame numerous hardships to become masters of their craft.</description>
+      <guid>http://localhost:1313/posts/20240210t001527--writing-books-and-using-exercises-to-fool-oneself__article_blog_personal/</guid>
+      <description>&lt;p&gt;I am stickler for reading writing books written by the writers themselves. I have read three of them, &lt;a href=&#34;https://www.amazon.in/Writing-Memoir-Craft-Stephen-King/dp/1444723251&#34;&gt;On writing by Stephen King&lt;/a&gt;, &lt;a href=&#34;https://www.amazon.in/Writing-Badly-Easy-Amitava-Kumar/dp/9388292510&#34;&gt;Writing Badly is Easy By Amitava Kumar&lt;/a&gt; and &lt;a href=&#34;https://www.amazon.in/Novelist-Vocation-charmingly-idiosyncratic-internationally/dp/1911215388?source=ps-sl-shoppingads-lpcontext&amp;amp;ref_=fplfs&amp;amp;psc=1&amp;amp;smid=A1WYWER0W24N8S&#34;&gt;Novalist as a Vocation by Haruki Murakami&lt;/a&gt;, along with the description of a writer&amp;rsquo;s day and other related stuff in the books and blogs by Tim Ferris.It&amp;rsquo;s fascinating to hear writers talk about the gruesome writing rituals they follow, the ways in which they developed their writing skills, and how they overcame numerous hardships to become masters of their craft. Perhaps what resonates with me most is the realization that these superhumans are also mortal, facing the same challenges and struggles that we as humans encounter.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

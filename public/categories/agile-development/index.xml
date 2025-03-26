@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Agile Development on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/categories/agile-development/</link>
+    <link>http://localhost:1313/categories/agile-development/</link>
     <description>Recent content in Agile Development on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <atom:link href="https://kaushalbundel.com/categories/agile-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/agile-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on Client/end User&#39;s Discovery process</title>
-      <link>https://kaushalbundel.com/posts/2021-01-26-client-discovery/</link>
+      <link>http://localhost:1313/posts/2021-01-26-client-discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/2021-01-26-client-discovery/</guid>
+      <guid>http://localhost:1313/posts/2021-01-26-client-discovery/</guid>
       <description>Study notes on Client/User Interview</description>
     </item>
     <item>
       <title>Notes on UAT</title>
-      <link>https://kaushalbundel.com/posts/2021-01-20-uat/</link>
+      <link>http://localhost:1313/posts/2021-01-20-uat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/posts/2021-01-20-uat/</guid>
+      <guid>http://localhost:1313/posts/2021-01-20-uat/</guid>
       <description>Study notes on how to User Acceptance Testing</description>
     </item>
   </channel>

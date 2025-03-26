@@ -2,106 +2,148 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Feb 2024 00:15:00 +0530</lastBuildDate>
-    <atom:link href="https://kaushalbundel.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Mar 2025 01:54:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Personal</title>
-      <link>https://kaushalbundel.com/categories/personal/</link>
-      <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/categories/personal/</guid>
+      <title>Programming</title>
+      <link>http://localhost:1313/categories/programming/</link>
+      <pubDate>Wed, 26 Mar 2025 00:20:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/programming/</guid>
       <description></description>
     </item>
     <item>
-      <title>Writing</title>
-      <link>https://kaushalbundel.com/categories/writing/</link>
-      <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/categories/writing/</guid>
+      <title>CSS</title>
+      <link>http://localhost:1313/categories/css/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Behavior Science</title>
+      <link>http://localhost:1313/categories/behavior-science/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/behavior-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product</title>
+      <link>http://localhost:1313/categories/product/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/product/</guid>
       <description></description>
     </item>
     <item>
       <title>MeditationApp</title>
-      <link>https://kaushalbundel.com/categories/meditationapp/</link>
-      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/categories/meditationapp/</guid>
+      <link>http://localhost:1313/categories/meditationapp/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/meditationapp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/categories/python/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginner</title>
+      <link>http://localhost:1313/categories/beginner/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/beginner/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>https://kaushalbundel.com/categories/books/</link>
-      <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/categories/books/</guid>
+      <link>http://localhost:1313/categories/books/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/books/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Writing</title>
+      <link>http://localhost:1313/categories/writing/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/writing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/categories/personal/</link>
+      <pubDate>Sat, 10 Feb 2024 00:15:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Emacs</title>
-      <link>https://kaushalbundel.com/categories/emacs/</link>
+      <link>http://localhost:1313/categories/emacs/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/emacs/</guid>
+      <guid>http://localhost:1313/categories/emacs/</guid>
       <description></description>
     </item>
     <item>
-      <title>Product management</title>
-      <link>https://kaushalbundel.com/categories/product-management/</link>
+      <title>Product Management</title>
+      <link>http://localhost:1313/categories/product-management/</link>
       <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/product-management/</guid>
+      <guid>http://localhost:1313/categories/product-management/</guid>
       <description></description>
     </item>
     <item>
-      <title>interesting</title>
-      <link>https://kaushalbundel.com/categories/interesting/</link>
+      <title>Interesting</title>
+      <link>http://localhost:1313/categories/interesting/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/interesting/</guid>
+      <guid>http://localhost:1313/categories/interesting/</guid>
       <description></description>
     </item>
     <item>
       <title>Dart</title>
-      <link>https://kaushalbundel.com/categories/dart/</link>
+      <link>http://localhost:1313/categories/dart/</link>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/dart/</guid>
+      <guid>http://localhost:1313/categories/dart/</guid>
       <description></description>
     </item>
     <item>
       <title>Flutter</title>
-      <link>https://kaushalbundel.com/categories/flutter/</link>
+      <link>http://localhost:1313/categories/flutter/</link>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/flutter/</guid>
+      <guid>http://localhost:1313/categories/flutter/</guid>
       <description></description>
     </item>
     <item>
       <title>Agile Development</title>
-      <link>https://kaushalbundel.com/categories/agile-development/</link>
+      <link>http://localhost:1313/categories/agile-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/agile-development/</guid>
+      <guid>http://localhost:1313/categories/agile-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Client Discovery</title>
-      <link>https://kaushalbundel.com/categories/client-discovery/</link>
+      <link>http://localhost:1313/categories/client-discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/client-discovery/</guid>
+      <guid>http://localhost:1313/categories/client-discovery/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>https://kaushalbundel.com/categories/testing/</link>
+      <link>http://localhost:1313/categories/testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/testing/</guid>
+      <guid>http://localhost:1313/categories/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>UAT</title>
-      <link>https://kaushalbundel.com/categories/uat/</link>
+      <link>http://localhost:1313/categories/uat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kaushalbundel.com/categories/uat/</guid>
+      <guid>http://localhost:1313/categories/uat/</guid>
       <description></description>
     </item>
   </channel>

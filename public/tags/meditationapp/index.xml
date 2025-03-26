@@ -1,47 +1,325 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>meditationapp on Experiments, Thoughts and reflection</title>
-    <link>https://kaushalbundel.com/tags/meditationapp/</link>
-    <description>Recent content in meditationapp on Experiments, Thoughts and reflection</description>
+    <title>Meditationapp on Experiments, Thoughts and reflection</title>
+    <link>http://localhost:1313/tags/meditationapp/</link>
+    <description>Recent content in Meditationapp on Experiments, Thoughts and reflection</description>
     <image>
       <title>Experiments, Thoughts and reflection</title>
-      <url>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kaushalbundel.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0530</lastBuildDate>
-    <atom:link href="https://kaushalbundel.com/tags/meditationapp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/meditationapp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Notes on Building a meditation app (Day 2)</title>
-      <link>https://kaushalbundel.com/posts/meditation-app-day-2/</link>
-      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/meditation-app-day-2/</guid>
-      <description>Development Activity Task Adding Ambient music to the meditation session Option 1: Create a local app state, store the value of the widget state in that app state. Use the app state in the meditation section Option 2: Create a page parameter, Pass the widget state in the page parameter and use the page parameter in the meditation session So far, having tried both of these methods, I am not able to get the looping music to work.</description>
+      <title>Notes of Building a Meditation App (Day 18)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-18/</link>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-18/</guid>
+      <description>&lt;h2 id=&#34;i-found-this-excellent-product-breakdown-of-calm--meditation-app--how-calm-uses-premium-to-motivate-dot-this-article-delves-on-the-following-key-points&#34;&gt;I found this excellent product breakdown of Calm(Meditation App),&lt;a href=&#34;https://kristenberman.substack.com/p/how-calm-uses-premium-to-motivate&#34;&gt;How Calm uses premium to motivate&lt;/a&gt;. This article delves on the following key points:&lt;/h2&gt;
+&lt;p&gt;Meditation is often perceived as a challenging pursuit. The behavioral and mental shifts following regular meditation practice vary from person to person and typically emerge after a sustained period. Moreover, tailoring the environment to enhance each individual&amp;rsquo;s experience is not always possible. Consider the scenario where you&amp;rsquo;ve resolved to meditate, aiming to silence the cacophony of thoughts. You download an app and subscribe. Despite setting this intention and taking action, the likelihood of experiencing a transformative, day-altering meditation session is relatively slim. Contrast this with joining a gym. Discontent with your health and ongoing physical issues, you muster the courage to sign up for a premium gym membership. Surrounded by individuals showcasing their physical achievements, you&amp;rsquo;re motivated by the possibility of similar success. Your first session, amidst gleaming equipment, ignites a thrill and a satisfying sensation in your biceps, affirming your decision.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Notes on Building a meditation app (Day 1)</title>
-      <link>https://kaushalbundel.com/posts/meditation-app-day-1/</link>
-      <pubDate>Tue, 06 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/meditation-app-day-1/</guid>
-      <description>Defining the Constraints Feature Constraint: The time spent on an activity should be minimal, yet the feature/activity should offer relief from day-to-day stressors during that period. Feature Constraint: The activity should seamlessly integrate into daily routines. Developmental Constraint: I should be able to reuse already developed features such as the login flow, registration flow, meditation timer, and journal. Cost Constraint: The development cost should be limited to less than 50,000 INR.</description>
+      <title>Notes on Building a Meditation App (Day 17)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-17/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-17/</guid>
+      <description>&lt;h2 id=&#34;deciding-what-to-build-for-phase-1&#34;&gt;Deciding what to build for phase 1&lt;/h2&gt;
+&lt;p&gt;For the past few days, I&amp;rsquo;ve been feeling stuck. I thought I was on the brink of completing my app, but for some reason, I couldn&amp;rsquo;t bring myself to do it. My progress was hindered by multiple factors:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I began to doubt myself and my project. I questioned whether this product would indeed help users achieve a sense of calm in their day-to-day lives. I wondered if the product could offer a momentary respite amid their hectic schedules. To alleviate my doubts, I turned to research papers, most of which concluded that tracking and monitoring do help in identifying and managing stressors, with many people experiencing significant mental health benefits. I also read reviews of competing products and discovered that users greatly benefited from similar apps.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 16)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-16/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-16/</guid>
+      <description>&lt;h2 id=&#34;another-exiting-tutorial-by-the-digital-pro-s-nocode-academy-on-building-beautiful-charts-in-flutterflow-dot&#34;&gt;&lt;!-- raw HTML omitted --&gt;WAITING&lt;!-- raw HTML omitted --&gt; Another exiting tutorial by &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/@the_digitalpro&#34;&gt;The Digital Pro&amp;rsquo;s NoCode Academy&lt;/a&gt;&amp;rdquo; on  &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=Dr5xHfk1nQY&amp;amp;ab_channel=TheDigitalPro%27sNoCodeAcademy&#34;&gt;building beautiful charts&lt;/a&gt;&amp;rdquo; in Flutterflow.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;State &amp;ldquo;WAITING&amp;rdquo;    from &amp;ldquo;IN-PROGRESS&amp;rdquo; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-20 Wed 23:31] &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;
+I should complete basic Dart and flutter course before jumping on this task.&lt;/li&gt;
+&lt;li&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-20 Wed 18:12]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: This has a special utility for me as with this I could create the date wise charts for &amp;ldquo;Meditation completion&amp;rdquo; and &amp;ldquo;Mood Board Completion&amp;rdquo; tracking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 14)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-14/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-14/</guid>
+      <description>&lt;h2 id=&#34;enabling-audio-in-the-app&#34;&gt;Enabling Audio in the App&lt;/h2&gt;
+&lt;p&gt;This is a long standing task. I tried to implement this feature but was unsuccessful. Let&amp;rsquo;s see how we fare now.&lt;/p&gt;
+&lt;h3 id=&#34;supporting-material&#34;&gt;Supporting Material&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://community.flutterflow.io/c/community-custom-widgets/post/play-background-music-on-loop-custom-actions-MeEMMe5JdmsZQFM&#34;&gt;Community Solution to the sound looping problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=yl2LOhJl964&amp;amp;ab_channel=TheDigitalPro%27sNoCodeAcademy&#34;&gt;Digital Pro&amp;rsquo;s No Code Academy Tutorial on Custom Action&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;important-background-context&#34;&gt;Important Background Context&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;BuildContext&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Flutter, the build context represents the location of a widget within the widget tree. It allows widgets to interact with other widgets and access data and services provided by higher-level widgets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;steps-completed&#34;&gt;Steps Completed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Used the code structure as provided in the Community Solution&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 13)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-13/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-13/</guid>
+      <description>&lt;h2 id=&#34;product-related-thoughts&#34;&gt;Product Related Thoughts&lt;/h2&gt;
+&lt;p&gt;Day before Yesterday, I had a fascinating discussion with a UI/UX specialist that delved into the core essence of our product and overall design philosophy. The conversation naturally drifted towards the uniqueness of our meditation app, its necessity, and the critical aspect of user engagement. This got me rethinking about the core nature of the app.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About need for this meditation app&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The fundamental concept behind our product resonates with me. Even though I haven&amp;rsquo;t personally experienced it yet, I believe it holds significant benefits for its users. Perhaps I should dive in and immerse myself in its features to truly grasp its value and impact on my own well-being.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 12)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-12/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-12/</guid>
+      <description>&lt;h3 id=&#34;todo-an-exciting-new-feature-has-been-launched-by-flutterflow-which-can-be-quite-useful-for-user-onboarding-this-feature-is-called-walkthrough-through-this-feature-i-can-do-entire-app-walkthrough-while-the-user-first-logs-in-the-app&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; An exciting new feature has been launched by Flutterflow which can be quite useful for user onboarding. This feature is called &amp;ldquo;walkthrough&amp;rdquo;. Through this feature, I can do entire app walkthrough while the user first logs in the app.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=FFpR1SDrZEQ&#34;&gt;Flutterflow demo on app walkthrough&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;another-exiting-tutorial-by-the-digital-pro-s-nocode-academy-on-building-beautiful-charts-in-flutterflow-dot-this-has-a-special-utility-for-me-as-with-this-i-could-create-the-date-wise-charts-for-meditation-completion-and-mood-board-completion-tracking-dot&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Another exiting tutorial by &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/@the_digitalpro&#34;&gt;The Digital Pro&amp;rsquo;s NoCode Academy&lt;/a&gt;&amp;rdquo; on  &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=Dr5xHfk1nQY&amp;amp;ab_channel=TheDigitalPro%27sNoCodeAcademy&#34;&gt;building beautiful charts&lt;/a&gt;&amp;rdquo; in Flutterflow. This has a special utility for me as with this I could create the date wise charts for &amp;ldquo;Meditation completion&amp;rdquo; and &amp;ldquo;Mood Board Completion&amp;rdquo; tracking.&lt;/h3&gt;
+&lt;h3 id=&#34;implement-good-to-have-user-experience&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; - Implement Good to have user experience&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.flutterflow.io/item/3UhgN09SYvqorpSOnYAv&#34;&gt;Ripple Wave effect&lt;/a&gt; : This can be used on the meditation page : &lt;strong&gt;Implementation complete&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation--important-from-the-pov-of-creating-custom-widgets&#34;&gt;Implementation (Important from the POV of creating Custom Widgets)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Video: &lt;a href=&#34;https://www.youtube.com/watch?v=QUBS0KFfwB4&amp;amp;t=5s&amp;amp;ab_channel=FlutterFlow&#34;&gt;Flutterflow Tutorial on Custom Widgets&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 11)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-11/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-11/</guid>
+      <description>&lt;p&gt;We are at the last leg of the development effort for Phase 0. This is a time filled with both fear and excitement. The stakes are high and the possibility of mistakes is significant, yet the opportunity for learning is abundant. In terms of developmental efforts,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Core functionalities are defined and implemented&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Major UX work is complete. The app flow is more or less defined. For whom the app is, What the app will do and how it will work is also defined&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 10)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-10/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-10/</guid>
+      <description>&lt;h2 id=&#34;today-s-implementation&#34;&gt;Today&amp;rsquo;s Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;nav-bar-improvements&#34;&gt;&lt;!-- raw HTML omitted --&gt;WAITING&lt;!-- raw HTML omitted --&gt; Nav-Bar improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;State &amp;ldquo;WAITING&amp;rdquo;    from &amp;ldquo;IN-PROGRESS&amp;rdquo; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-02 Sat 15:39] &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;
+Flutter needs to be installed on the Device&lt;/li&gt;
+&lt;li&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-03-02 Sat 15:23]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Flutterflow includes three types of Nav-bar implementations: Flutter Default Nav Bar, Google Nav Bar and Floating Nav Bar. I had initially implemented  Flutter Default Nav Bar, the problem with the implementation was that the Nav Bar throws an error if you need a Nav bar on the pages for easy navigation that are not present on the Nav Bar (for eg. I do not have the meditation timer page on the nav bar yet I want the Nav bar to be present on the page for easy user navigation).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 9)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-9/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-9/</guid>
+      <description>&lt;h2 id=&#34;today-s-implementation&#34;&gt;Today&amp;rsquo;s Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;design-consistancy-should-be-ensured--eg-dot-in-some-places-back-is-a-button-while-on-others-it-is-an-appbar-icon&#34;&gt;&lt;!-- raw HTML omitted --&gt;DONE&lt;!-- raw HTML omitted --&gt; Design consistancy should be ensured (eg. in some places &amp;ldquo;back&amp;rdquo; is a button while on others it is an Appbar icon)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;State &amp;ldquo;DONE&amp;rdquo;       from &amp;ldquo;IN-PROGRESS&amp;rdquo; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-02-29 Thu 16:11]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-02-28 Wed 21:14]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 8)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-8/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-8/</guid>
+      <description>&lt;h2 id=&#34;today-s-implementation&#34;&gt;Today&amp;rsquo;s Implementation&lt;/h2&gt;
+&lt;h3 id=&#34;design-consistancy-should-be-ensured--eg-dot-in-some-places-back-is-a-button-while-on-others-it-is-an-appbar-icon&#34;&gt;&lt;!-- raw HTML omitted --&gt;IN-PROGRESS&lt;!-- raw HTML omitted --&gt;: Design consistancy should be ensured (eg. in some places &amp;ldquo;back&amp;rdquo; is a button while on others it is an Appbar icon)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;State &amp;ldquo;IN-PROGRESS&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo;       &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;[2024-02-28 Wed 21:14]&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation-details&#34;&gt;Implementation Details&lt;/h4&gt;
+&lt;p&gt;Pages where back button is a &amp;ldquo;button&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Track your mood page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pages with design changes&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 7)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-7/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-7/</guid>
+      <description>&lt;h2 id=&#34;note-on-a-week-long-absence&#34;&gt;Note on a week-long absence&lt;/h2&gt;
+&lt;p&gt;Well, I just recovered from a severe viral infection. A changing weather and a family function triggered the concern. Things were a bit difficult but I am learning to take these circumstances in my stride. Thanks to the wonder of modern medicine and love of near ones.🙏🏼&lt;/p&gt;
+&lt;h2 id=&#34;recap-of-the-last-session&#34;&gt;Recap of the last session&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Completed the UI for Mood Tracker&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Streamlined how reflection(notes after meditation session) and related information are stored in the backend&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a Meditation App (Day 6)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-6/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-6/</guid>
+      <description>&lt;h3 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h3&gt;
+&lt;p&gt;Flutterflow team recently released some exceptional videos to help with the UI problems that I am currently facing. These problems include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I am creating for one set screen and in reality the app will be used in multiple devices of varied sizes. A common guide for getting a size reference is available on android developer guide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/_20240216_014034screenshot.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Even though the size that I have chosen makes sense, still due to faulty layout configuration negative spaces/gaps will get affected if the screen size deviates from the standard one.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 5)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-5/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-5/</guid>
+      <description>&lt;h2 id=&#34;development-activity-1&#34;&gt;Development Activity # 1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The user should be able to click the appropriate mood indicator and mark the mood for the day. After clicking appropriate indicator the indicator value should get stored in the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Page parameter(mood) created on the meditation page&lt;/li&gt;
+&lt;li&gt;The mood value, which is stored in the widget state is passed from Homepage to the meditation page&lt;/li&gt;
+&lt;li&gt;To store the value in firebase:
+&lt;ol&gt;
+&lt;li&gt;Add the field in the firebase database&lt;/li&gt;
+&lt;li&gt;Add the value on the firebase database on Flutterflow&lt;/li&gt;
+&lt;li&gt;Deploy the firebase database on Flutterflow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Problem: The value of the notes is not getting stored in the session collection, infact I am not sure where the value is getting stored 🧐&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 4)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-4/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-4/</guid>
+      <description>&lt;h3 id=&#34;task-continue-from-the-previous-day&#34;&gt;Task continue from the previous day&lt;/h3&gt;
+&lt;p&gt;(Task: Adding a mood board to check on the user mood as soon as the user opens up the app)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The mood board should constitute a design that should indicate 5 faces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;implementation-notes&#34;&gt;Implementation Notes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Feature design notes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Option 1: Create a new component. Create 5 containers with different emoji faces. These different faces also have their corresponding color variants. The color switching will happen with the help of a radio button. When the radio button is clicked, the conditional display of emoji buttons will be triggered, displaying only the selected option. The problem with this implementation is how to control when two or more emojis are clicked one after another. There are no hooks that enable me to link these separate bits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes on Building a meditation app (Day 3)</title>
-      <link>https://kaushalbundel.com/posts/meditation-app-day-3/</link>
-      <pubDate>Mon, 05 Feb 2024 17:08:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/meditation-app-day-3/</guid>
-      <description>Development Activity Task Adding a mood board to check on the user mood as soon as the user opens up the app ATTACH [] The user should be able view the mood board as soon as they open the app.
-[] The user should be able to click the appropriate mood indicator and mark the mood for the day. After click appropriate indicator the indicator value should get stored in the database</description>
+      <link>http://localhost:1313/posts/meditation-app-day-3/</link>
+      <pubDate>Sun, 11 Feb 2024 00:19:50 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-3/</guid>
+      <description>&lt;h2 id=&#34;development-activity&#34;&gt;Development Activity&lt;/h2&gt;
+&lt;h3 id=&#34;task-adding-a-mood-board-to-check-on-the-user-mood-as-soon-as-the-user-opens-up-the-app&#34;&gt;Task: Adding a mood board to check the user mood as soon as the app is opened&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The user should be able view the mood board as soon as they open the app&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The user should be able to click the appropriate mood indicator and mark the mood for the day. After click appropriate indicator the indicator value should get stored in the database&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The past values/mood faces of the mood indicator should be shown on the &amp;ldquo;Reflections&amp;rdquo; page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 2)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-2/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-2/</guid>
+      <description>&lt;h2 id=&#34;development-activity&#34;&gt;Development Activity&lt;/h2&gt;
+&lt;h3 id=&#34;task-adding-ambient-music-to-the-meditation-session&#34;&gt;Task Adding Ambient music to the meditation session&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Option 1: Create a local app state, store the value of the widget state in that app state. Use the app state in the meditation section&lt;/li&gt;
+&lt;li&gt;Option 2: Create a page parameter, Pass the widget state in the page parameter and use the page parameter in the meditation session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So far, having tried both of these methods, I am not able to get the looping music to work. In both of the above options, the app was not compiling at all.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notes on Building a meditation app (Day 1)</title>
+      <link>http://localhost:1313/posts/meditation-app-day-1/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/meditation-app-day-1/</guid>
+      <description>&lt;h2 id=&#34;defining-the-constraints&#34;&gt;Defining the Constraints&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Feature Constraint: The time spent on an activity should be minimal, yet the feature/activity should offer relief from day-to-day stressors during that period.&lt;/li&gt;
+&lt;li&gt;Feature Constraint: The activity should seamlessly integrate into daily routines.&lt;/li&gt;
+&lt;li&gt;Developmental Constraint: I should be able to reuse already developed features such as the login flow, registration flow, meditation timer, and journal.&lt;/li&gt;
+&lt;li&gt;Cost Constraint: The development cost should be limited to less than 50,000 INR.&lt;/li&gt;
+&lt;li&gt;Time Constraint: The app should be live on either the Android Play Store or Apple App Store by the end of March.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;expansion-of-features-that-have-already-been-developed&#34;&gt;Expansion of features that have already been developed&lt;/h2&gt;
+&lt;h4 id=&#34;adding-ambient-music-to-the-meditation-session&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Adding ambient music to the meditation session&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;DONE&lt;!-- raw HTML omitted --&gt;  Adding ambient music track to the session (Started: &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2024-02-06 Tue 07:30&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;)(Ended: &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;2024-02-06 Tue 08:30&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  A choice of 5 or more ambient tracks to choose from&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  Tracks to run through the duration of the session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;adding-a-mood-board-to-check-on-the-user-mood-as-soon-as-the-user-opens-up-the-app&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Adding a mood board to check on the user mood as soon as the user opens up the app&lt;/h4&gt;
+&lt;h4 id=&#34;improving-ui&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Improving UI&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to make buttons standout?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to use different widgets so that the app looks pretty?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;improving-ux&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Improving UX&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to fit in separate components needed for the meditation session (like setting the time, setting the music, starting the session, collecting feedback after the session)?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt;  How to improve the journaling experience?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;new-feature-design&#34;&gt;New Feature Design&lt;/h2&gt;
+&lt;h3 id=&#34;fitting-the-basic-features--journal-and-meditation-with-the-core-premise-of-the-app&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Fitting the basic features (Journal and Meditation with the core premise of the app)&lt;/h3&gt;
+&lt;h3 id=&#34;develop-a-tinder-style-quote-gallery&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Develop a Tinder style quote gallery&lt;/h3&gt;
+&lt;h4 id=&#34;adding-share-links-to-social-media&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Adding share links to social media&lt;/h4&gt;
+&lt;h3 id=&#34;redesigning-the-app-to-fit-in-different-features&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Redesigning the App to fit in different features&lt;/h3&gt;
+&lt;h3 id=&#34;payment-gateway-integration&#34;&gt;&lt;!-- raw HTML omitted --&gt;TODO&lt;!-- raw HTML omitted --&gt; Payment Gateway Integration??&lt;/h3&gt;
+&lt;h2 id=&#34;development-activity&#34;&gt;Development Activity&lt;/h2&gt;
+&lt;h3 id=&#34;adding-ambient-music-to-the-meditation-session&#34;&gt;Adding ambient music to the meditation session&lt;/h3&gt;
+&lt;h4 id=&#34;commercial-use-music-resources&#34;&gt;Commercial use music resources&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pixabay.com/sound-effects/search/ambient/&#34;&gt;Pixabay.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.videvo.net/royalty-free-sound-effects/ambience/&#34;&gt;videvo.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sound-extensions&#34;&gt;Sound extensions&lt;/h4&gt;
+&lt;p&gt;There needs to be a balance between good audio output and low file size. The following extensions came up in the research.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes on building a meditation app (Day 0)</title>
-      <link>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</link>
+      <link>http://localhost:1313/posts/notes-on-building-a-meditation-app-day-0/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0530</pubDate>
-      <guid>https://kaushalbundel.com/posts/notes-on-building-a-meditation-app-day-0/</guid>
-      <description>Objective of the App Time for a short story
-About 1 month back, I got the idea of creating an application that helps in conducting an effective meditation practice. The problem that I was trying to solve was that sometimes after a meditation session my mind was on overdrive and I felt overwhelmed by my thoughts. To channel and understand my thoughts I started the practice of writing a journal. I would use pen and paper to do journaling and the practice helped me to calm down and structure my thoughts.</description>
+      <guid>http://localhost:1313/posts/notes-on-building-a-meditation-app-day-0/</guid>
+      <description>&lt;h2 id=&#34;objective-of-the-app&#34;&gt;Objective of the App&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;strong&gt;Time for a short story&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;About 1 month back, I got the idea of creating an application that helps in conducting an effective meditation practice. The problem that I was trying to solve was that sometimes after a meditation session my mind was on overdrive and I felt overwhelmed by my thoughts. To channel and understand my thoughts I started the practice of writing a journal. I would use pen and paper to do journaling and the practice helped me to calm down and structure my thoughts. Often I would set a meditation timer on my phone and then I would scramble for the pen and paper after the meditation session.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
