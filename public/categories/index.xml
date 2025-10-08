@@ -9,10 +9,17 @@
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Mar 2025 01:54:08 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 20:47:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book_Review</title>
+      <link>http://localhost:1313/categories/book_review/</link>
+      <pubDate>Wed, 08 Oct 2025 20:47:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/book_review/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Programming</title>
       <link>http://localhost:1313/categories/programming/</link>
@@ -30,14 +37,14 @@
     <item>
       <title>Behavior Science</title>
       <link>http://localhost:1313/categories/behavior-science/</link>
-      <pubDate>Fri, 03 May 2024 00:00:00 +0530</pubDate>
+      <pubDate>Fri, 03 May 2024 11:56:00 +0530</pubDate>
       <guid>http://localhost:1313/categories/behavior-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Product</title>
       <link>http://localhost:1313/categories/product/</link>
-      <pubDate>Fri, 03 May 2024 00:00:00 +0530</pubDate>
+      <pubDate>Fri, 03 May 2024 11:56:00 +0530</pubDate>
       <guid>http://localhost:1313/categories/product/</guid>
       <description></description>
     </item>
@@ -51,7 +58,7 @@
     <item>
       <title>Python</title>
       <link>http://localhost:1313/categories/python/</link>
-      <pubDate>Mon, 22 Apr 2024 00:00:00 +0530</pubDate>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0530</pubDate>
       <guid>http://localhost:1313/categories/python/</guid>
       <description></description>
     </item>
@@ -116,34 +123,6 @@
       <link>http://localhost:1313/categories/flutter/</link>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/flutter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Agile Development</title>
-      <link>http://localhost:1313/categories/agile-development/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/agile-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Client Discovery</title>
-      <link>http://localhost:1313/categories/client-discovery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/client-discovery/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>http://localhost:1313/categories/testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>UAT</title>
-      <link>http://localhost:1313/categories/uat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/uat/</guid>
       <description></description>
     </item>
   </channel>
